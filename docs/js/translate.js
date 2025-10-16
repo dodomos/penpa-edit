@@ -101,7 +101,7 @@ function trans() {
         "solution_open": ["解答判定", "Answer descision", "答案判断"],
         "closeBtn_save5": ["解答判定付き出題用アドレスを出力", "Generate URL with answer check", "生成带答案检测的链接"],
         "closeBtn_save6": ["短縮", "Shorten", "生成短链"],
-        "pp_file": ["pp_fileを出力", "pp_file output"],
+        "pp_file": ["pp_fileを出力", "pp_file output", "输出 pp_file"],
         "load_url": ["URLを入力", "Load URL", "加载链接"],
         "puzzlerules": ["ルールを表示", "Show rules", "显示规则"],
         "closeBtn_input1": ["挿入", "Insert", "插入"],
@@ -535,12 +535,12 @@ const PenpaText = {
         border: { EN: "Border:", JP: '境界：' },
         order: { EN: "Order:", ZH: '阶数' },
 
-        nb_gridtype8_lb: { EN: 'Tetrakis square', ZH: '四角化正方形' },
-        nb_gridtype9_lb: { EN: 'Truncated square', ZH: '截角正方形' },
-        nb_gridtype10_lb: { EN: 'Snub square', ZH: '扭棱正方形' },
-        nb_gridtype11_lb: { EN: 'Cairo pentagonal', ZH: '开罗五边形' },
-        nb_gridtype12_lb: { EN: 'Rhombitrihexagonal', ZH: '小斜方截半六边形' },
-        nb_gridtype13_lb: { EN: 'Deltoidal trihexagonal', ZH: '鸢形' },
+        nb_gridtype8_lb: { EN: 'Tetrakis square' },
+        nb_gridtype9_lb: { EN: 'Truncated square' },
+        nb_gridtype10_lb: { EN: 'Snub square' },
+        nb_gridtype11_lb: { EN: 'Cairo pentagonal' },
+        nb_gridtype12_lb: { EN: 'Rhombitrihexagonal' },
+        nb_gridtype13_lb: { EN: 'Deltoidal trihexagonal' },
         nb_gridtype14_lb: { EN: 'Penrose P3' },
 
         // Generic Terms
@@ -565,7 +565,7 @@ const PenpaText = {
 
         // Main UI
         page_help: { EN: 'Help', JP: 'ヘルプ', ZH: '帮助' },
-        constraints: { EN: 'Constraints (Beta)', JP: '専用モード' },
+        constraints: { EN: 'Constraints (Beta)', JP: '専用モード', ZH: '专用模式' },
 
         disable_penpa_lite: {
             JP: 'Penpa Liteを無効化',
@@ -592,7 +592,7 @@ const PenpaText = {
         contest_answer: {
             EN: '*Note the Solution Code, go back to <a href="$v" target="_blank">Source</a> and enter in the Submissions Box*',
             JP: 'アンサーキーの入力は、<a href=$v" target="_blank">Source</a> に戻り、Submissions Boxから行ってください*"',
-            ZH: '*记住提交码，回到<a href="$v" target="_blank">原链接</a>并输入到提交框内*'
+            ZH: '*回到<a href="$v" target="_blank">原地址</a>并在提交框输入答案提交码*'
         },
 
         answer_check_empty: {
