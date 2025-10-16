@@ -335,8 +335,8 @@ function trans() {
         "name_size2": ["タテ：", "Rows:", "行数："],
         "nb_space_lb": ["余白：", "White space:", "留白："],
         "nb_display_lb": ["表示サイズ：", "Display size:", "显示大小："],
-        "nb_sudoku1_lb": ["対角線 &#x27CD;", "Diagonal &#x27CD;", "主对角线"],
-        "nb_sudoku4_lb": ["対角線 &#x27CB;", "Diagonal &#x27CB;", "副对角线"],
+        "nb_sudoku1_lb": ["対角線 &#x27CD;", "Diagonal &#x27CD;", "主对角线 &#x27CD;"],
+        "nb_sudoku4_lb": ["対角線 &#x27CB;", "Diagonal &#x27CB;", "副对角线 &#x27CB;"],
         "nb_sudoku2_lb": ["外周ヒント", "Outside clues", "外提示数"],
         "nb_sudoku3_lb": ["外周ヒント(上左)", "Outside clues (top/left)", "外提示数（左上）"],
         "nb_penrose1_lb": ["回転非対称性", "Rotational asymmetry", "旋转不对称性"],
@@ -529,18 +529,18 @@ const PenpaText = {
         // Grid Setup
         columns: { JP: "ヨコ：", EN: "Columns:", ZH: '列：' },
         rows: { JP: "タテ：", EN: "Rows:", ZH: '行' },
-        side: { EN: "Side:", JP: '幅：' },
+        side: { EN: "Side:", JP: '幅：', ZH: '尺寸' },
         sides: { EN: "Sides:", JP: '横：' },
         over: { EN: "Over:", JP: '上：' },
         border: { EN: "Border:", JP: '境界：' },
-        order: { EN: "Order:" },
+        order: { EN: "Order:", ZH: '阶数' },
 
-        nb_gridtype8_lb: { EN: 'Tetrakis square' },
-        nb_gridtype9_lb: { EN: 'Truncated square' },
-        nb_gridtype10_lb: { EN: 'Snub square' },
-        nb_gridtype11_lb: { EN: 'Cairo pentagonal' },
-        nb_gridtype12_lb: { EN: 'Rhombitrihexagonal' },
-        nb_gridtype13_lb: { EN: 'Deltoidal trihexagonal' },
+        nb_gridtype8_lb: { EN: 'Tetrakis square', ZH: '四角化正方形' },
+        nb_gridtype9_lb: { EN: 'Truncated square', ZH: '截角正方形' },
+        nb_gridtype10_lb: { EN: 'Snub square', ZH: '扭棱正方形' },
+        nb_gridtype11_lb: { EN: 'Cairo pentagonal', ZH: '开罗五边形' },
+        nb_gridtype12_lb: { EN: 'Rhombitrihexagonal', ZH: '小斜方截半六边形' },
+        nb_gridtype13_lb: { EN: 'Deltoidal trihexagonal', ZH: '鸢形' },
         nb_gridtype14_lb: { EN: 'Penrose P3' },
 
         // Generic Terms
@@ -552,7 +552,7 @@ const PenpaText = {
         close: { EN: 'Close', JP: '閉じる', ZH: '关闭' },
         show: { EN: 'Show', JP: '表示', ZH: '显示' },
         hide: { EN: 'Hide', JP: '隠す', ZH: '隐藏' },
-        ok: { EN: 'OK', ZH: '了解' },
+        ok: { EN: 'OK', ZH: '确认' },
 
         // Export Image
         nb_rules_lb: { JP: "ルール：", EN: "Rules:", ZH: '规则：' },
@@ -896,7 +896,7 @@ const PenpaText = {
         order_warning_generic: {
             EN: 'Order must be in the range <h2 class="warn">3-$v</h2>',
             JP: '注文は範囲内でなければなりません <h2 class="warn">3-$v</h2>',
-            ZH: '盘面？？取值必须在<h2 class="warn">3-$v</h2>范围内'
+            ZH: '盘面阶数取值必须在<h2 class="warn">3-$v</h2>范围内'
         },
         rotational_asymmetry_warning_generic: {
             EN: 'Rotational asymmetry must be in the range <h2 class="warn">0-$v</h2> for this order',
